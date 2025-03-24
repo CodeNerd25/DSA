@@ -1,9 +1,11 @@
 /*
 Print the following pattern
-1
-2 1
-3 2 1
-4 3 2 1
+
+A B C D
+A B C D
+A B C D
+A B C D
+
 */
 
 #include<iostream>
@@ -12,11 +14,12 @@ int main(){
     int n;
     cout <<"Enter the range : ";
     cin >> n;
-    int i=0;
+    int i=1;
     while(i<=n){
         int j=1;
-        while(j<=i){
-            cout << (i-j+1)<<"     ";
+        while(j<=n){
+            char ch = 'A'+j-1;
+            cout << ch<< "  " ;
             j++;
         }
         cout << endl;

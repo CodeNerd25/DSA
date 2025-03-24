@@ -1,22 +1,23 @@
 /*
 Print the following pattern
-1
-2 1
-3 2 1
-4 3 2 1
-*/
 
+A A A
+B B B
+C C C
+
+*/
 #include<iostream>
 using namespace std;
 int main(){
     int n;
     cout <<"Enter the range : ";
     cin >> n;
-    int i=0;
+    int i=1;
     while(i<=n){
         int j=1;
-        while(j<=i){
-            cout << (i-j+1)<<"     ";
+        while(j<=n){
+            char ch = 'A'+i-1;
+            cout << ch<< "  " ;
             j++;
         }
         cout << endl;

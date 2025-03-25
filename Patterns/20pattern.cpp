@@ -6,25 +6,26 @@ Print the following Pattern
 ****
 ******
 */
-#include<iostream>
+#include <iostream>
+
 using namespace std;
-int main(){
+
+int main() {
     int n;
-    cout <<"Enter the range : " ;
+
+    // Taking user input
+    cout << "Enter the number of rows: ";
     cin >> n;
-    int i=0;
-    while(i<=n){
-        int j=1;
-        int space = n-i;
-        while(space){
-            cout << " ";
-            space--;
-        }
-        while(j<=i){
-            cout <<"*" ;
+
+    int i = 1;
+    while (i <= n) {
+        int j = 1;
+        while (j <= i) {
+            cout << "*";
             j++;
         }
-        cout <<endl;
+        cout << endl;
         i++;
     }
+    return 0;
 }

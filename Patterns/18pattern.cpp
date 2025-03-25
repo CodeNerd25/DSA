@@ -1,3 +1,13 @@
+/*
+Print the following pattern
+
+D  
+C  D  
+B  C  D  
+A  B  C  D 
+
+*/
+
 #include<iostream>
 using namespace std;
 int main(){
